@@ -49,6 +49,6 @@ jobs:
           cd target-repo
           git config user.name "Grain-Kitty"
           git config user.email "yuwenpei983@gmail.com"
-          git add.
+          git add .
           git commit -m "upload from Web-For-building"
           git push origin main 
