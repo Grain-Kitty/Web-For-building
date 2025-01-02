@@ -43,7 +43,7 @@ jobs:
           path: target-repo
       - name: Copy Home Directory
         run: |
-          cp -r Home target-repo/  # 复制 Home 目录到目标仓库
+          cp -r dist target-repo/  # 复制 Home 目录到目标仓库
       - name: Commit and Push to Target Repository
         run: |
           cd target-repo
