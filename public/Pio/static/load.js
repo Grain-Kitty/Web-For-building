@@ -29,7 +29,7 @@ function load() {
       ],
     },
     model: [
-      "https://cdn.jsdelivr.net/gh/Grain-Kitty/Grain_Kitty.github.io@refs/heads/main/Pio/models/jaran/model.json",
+      "/Pio/models/jaran/model.json",
     ],
     tips: true,
     onModelLoad: onModelLoad,

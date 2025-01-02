@@ -1,0 +1,17 @@
+{
+  "name": "Grain_Kitty-Web",
+  "home": "https://GrainKitty.top",
+  "github": "https://github.com/Grain-Kitty/Web-For-building",
+  "version": "2.2",
+  "updatatime" : "2025-1-2",
+  "new": [
+    "25.1.2--重新部署了网站，解决了vue构建后github-page无法部署的问题",
+    "25.1.1--重构天气的获取方式",
+    "24.12.31--采用 Vue 进行重构",
+    "24.12.29--本网站运行"
+  ],
+  "fix": [
+    "25.1.2--修复了Live2D 模型无法加载的问题",
+    "25.1.2--修复了背景图丢失的问题"
+  ]
+}
