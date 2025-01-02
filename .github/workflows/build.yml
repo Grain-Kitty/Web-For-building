@@ -38,7 +38,7 @@ jobs:
       - name: Checkout Target Repository
         uses: actions/checkout@v2
         with:
-          repository: Grain_Kitty/Web-For-Show
+          repository: Grain-Kitty/Web-For-Show
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           path: target-repo
       - name: Copy Home Directory
