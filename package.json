@@ -4,7 +4,7 @@
   "github": "https://github.com/Grain-Kitty/Grain_Kitty.github.io",
   "home": "https://grainkitty.top/",
   "private": true,
-  "version": "2.1",
+  "version": "2.2",
   "type": "module",
   "scripts": {
     "dev": "vite --host",

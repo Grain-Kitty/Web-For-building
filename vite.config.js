@@ -23,6 +23,9 @@ export default ({ mode }) =>
       }),
       VitePWA({
         registerType: "autoUpdate",
+        devServer: {
+          historyApiFallback: true
+        },   
         workbox: {
           skipWaiting: true,
           clientsClaim: true,
