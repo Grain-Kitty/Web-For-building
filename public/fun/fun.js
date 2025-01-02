@@ -7,21 +7,15 @@ document.addEventListener("DOMContentLoaded", function () {
 //屏蔽输入框的自动填充功能
 
 // 加载 updatelog.json 文件
-fetch('https://raw.githubusercontent.com/Grain-Kitty/Web-For-building/refs/heads/main/updatelog.json')
+fetch('https://cdn.jsdelivr.net/gh/Grain-Kitty/Web-For-building@refs/heads/main/updatelog.json')
   .then(response => response.json())
   .then(data => {
-    // 在这里处理从 JSON 文件中获取的数据
-    console.log(data);
-    // 将数据渲染到页面上
-    renderDataToPage(data);
-
-    // 更新页面底部的链接信息
-    let Link = `
-更新日期: ${data.updatatime}
-主页: ${data.home}
-Github: ${data.github}
-`;
-    console.log(`%c${tu}  %c${Link}`, styletu, styleLink);
+    // 输出特定信息到控制台
+    console.log('Name:', data.name);
+    console.log('Home:', data.home);
+    console.log('GitHub:', data.github);
+    console.log('Version:', data.version);
+    console.log('Update Time:', data.updatatime);
   })
   .catch(error => console.error('Error loading JSON:', error));
 
