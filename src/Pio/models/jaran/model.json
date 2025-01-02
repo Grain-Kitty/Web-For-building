@@ -1,0 +1,149 @@
+{
+  "Version": 3,
+  "Bounds": {
+    "Width": 8.155103,
+    "Height": 9.0,
+    "CenterX": -0.1285725,
+    "CenterY": 0.0
+  },
+  "FileReferences": {
+    "Moc": "FileReferences_Moc_0.moc3",
+    "Textures": ["FileReferences_Textures_0_0.png"],
+    "Physics": "FileReferences_Physics_0.json",
+    "PhysicsV2": { "File": "FileReferences_Physics_0.json" },
+    "Motions": {
+      "Idle": [{ "File": "FileReferences_Motions_Idle_0_File_0.json" }],
+      "Tap生气 -领结": [
+        {
+          "File": "FileReferences_Motions_Tap生气 -领结_0_File_0.json",
+          "Text": "嘉心糖屁用没有",
+          "TextDelay": 2000,
+          "TextDuration": 3000
+        }
+      ],
+      "Tap= =  左蝴蝶结": [
+        {
+          "File": "FileReferences_Motions_Tap= =  左蝴蝶结_0_File_0.json",
+          "Text": "有人急了，但我不说是谁~",
+          "TextDelay": 1000,
+          "TextDuration": 4000
+        }
+      ],
+      "Tap笑- 脸": [
+        {
+          "File": "FileReferences_Motions_Tap笑- 脸_0_File_0.json",
+          "Text": "hi！嘉心糖",
+          "TextDelay": 2200,
+          "TextDuration": 2300
+        }
+      ],
+      "Tap哭 -眼角": [
+        {
+          "File": "FileReferences_Motions_Tap哭 -眼角_0_File_0.json",
+          "Text": "呜呜...呜呜呜....",
+          "TextDelay": 3200,
+          "TextDuration": 4000
+        }
+      ],
+      "Shake": [
+        {
+          "File": "FileReferences_Motions_Shake_0_File_0.json",
+          "Text": "别摇啦！",
+          "TextDelay": 1000,
+          "TextDuration": 2000
+        }
+      ],
+      "Tap害羞-中间刘海": [
+        {
+          "File": "FileReferences_Motions_Tap害羞-中间刘海_0_File_0.json",
+          "Text": "想然然了没有呀~",
+          "TextDelay": 1500,
+          "TextDuration": 3000
+        }
+      ],
+      "Tap抱阿草-左手": [
+        {
+          "File": "FileReferences_Motions_Tap抱阿草-左手_0_File_0.json",
+          "Text": "阿草好软呀~",
+          "TextDelay": 3000,
+          "TextDuration": 2500
+        }
+      ],
+      "Tap摇头- 身体": [
+        {
+          "File": "FileReferences_Motions_Shake_0_File_0.json",
+          "Text": "不要再戳啦！好痒！",
+          "TextDelay": 800,
+          "TextDuration": 2500
+        }
+      ],
+      "Tap耳朵-发卡": [
+        {
+          "File": "FileReferences_Motions_Tap耳朵-发卡_0_File_0.json",
+          "Text": "嗷呜~~~",
+          "TextDelay": 1500,
+          "TextDuration": 3000
+        }
+      ],
+      "Tap打瞌睡- 呆毛": [
+        {
+          "File": "FileReferences_Motions_Tap打瞌睡- 呆毛_0_File_0.json",
+          "Text": "啊",
+          "TextDelay": 7500,
+          "TextDuration": 800
+        }
+      ],
+      "Leave": [
+        {
+          "File": "FileReferences_Motions_Tap打瞌睡- 呆毛_0_File_0.json",
+          "Text": "zzZ。。。",
+          "TextDelay": 4000,
+          "TextDuration": 4000
+        }
+      ],
+      "Tap左头发": [{ "File": "FileReferences_Motions_Tap左头发_0_File_0.json" }],
+      "Tap右头发": [
+        {
+          "File": "FileReferences_Motions_Tap右头发_0_File_0.json",
+          "Text": "哇！好吃的！",
+          "TextDelay": 500,
+          "TextDuration": 3000
+        }
+      ]
+    }
+  },
+  "Controllers": {
+    "ParamHit": {},
+    "ParamLoop": {},
+    "KeyTrigger": {},
+    "EyeBlink": { "MinInterval": 500, "MaxInterval": 6000, "Enabled": true },
+    "LipSync": { "Gain": 5.0 },
+    "MouseTracking": { "SmoothTime": 0.15, "Enabled": true },
+    "AutoBreath": { "Enabled": true },
+    "ExtraMotion": { "Enabled": true },
+    "Accelerometer": { "Enabled": true },
+    "Microphone": {},
+    "Transform": {},
+    "FaceTracking": { "Enabled": true },
+    "ParamValue": {},
+    "PartOpacity": { "Items": [{}] },
+    "ArtmeshOpacity": {},
+    "ArtmeshColor": {},
+    "ArtmeshCulling": { "DefaultMode": 0 },
+    "IntimacySystem": {}
+  },
+  "HitAreas": [
+    { "Name": "= =  左蝴蝶结", "Id": "ArtMesh15" },
+    { "Name": "笑- 脸", "Id": "ArtMesh51" },
+    { "Name": "哭 -眼角", "Id": "ArtMesh48" },
+    { "Name": "生气 -领结", "Id": "ArtMesh56" },
+    { "Name": "害羞-中间刘海", "Id": "ArtMesh10" },
+    { "Name": "抱阿草-左手", "Id": "L4" },
+    { "Name": "打瞌睡- 呆毛", "Id": "ArtMesh9" },
+    { "Name": "耳朵-发卡", "Id": "L3" },
+    { "Name": "摇头- 身体", "Id": "jiaran" },
+    { "Name": "左头发", "Id": "L5" },
+    { "Name": "右头发", "Id": "R5" }
+  ],
+  "Options": { "TexFixed": true }
+}
