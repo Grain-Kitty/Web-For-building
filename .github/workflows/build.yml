@@ -43,7 +43,7 @@ jobs:
           path: target-repo
       - name: Copy Home Directory
         run: |
-          cp -rf dist/* target-repo/
+          Copy-Item -Path dist\* -Destination target-repo -Recurse -Force
       - name: Commit and Push to Target Repository
         run: |
           cd target-repo
