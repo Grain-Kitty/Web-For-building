@@ -1,54 +1,38 @@
-name: Build and Transfer
-
+name: Upload Website
 on:
-  push:
-    branches:
-      - main
-
+  workflow_run:
+    workflows: ["Build Website"]
+    types:
+      - completed
 jobs:
-  release:
-    name: Build Website
+  upload:
+    name: Upload Website
     runs-on: windows-latest
-
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
-      # 检出 Git 仓库
-      - name: Check out git repository
-        uses: actions/checkout@v4.1.1
-      # 安装 Node.js
-      - name: Install Node.js
-        uses: actions/setup-node@v4.0.0
+      # 下载构建产物
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v3
         with:
-          node-version: "18.x"
-      # 复制环境变量文件
-      - name: Copy .env.example
-        run: |
-          if (-not (Test-Path .env)) {
-            Copy-Item .env.example .env
-          } else {
-            Write-Host ".env file already exists. Skipping the copy step."
-          }
-      # 安装项目依赖
-      - name: Install Dependencies
-        run: npm install --force
-      # 构建程序
-      - name: Build Website
-        run: npm run build
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          name: website-build
+          path: stored-build
+      # 检出目标仓库
       - name: Checkout Target Repository
         uses: actions/checkout@v2
         with:
           repository: Grain-Kitty/Web-For-Show
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           path: target-repo
-      - name: Copy Home Directory
+      # 复制构建产物到目标仓库
+      - name: Copy Build Output to Target Repository
         run: |
-          cp -r dist target-repo/  # 复制 Home 目录到目标仓库
+          Copy-Item -Path stored-build\* -Destination target-repo -Recurse
+      # 提交并推送更改到目标仓库
       - name: Commit and Push to Target Repository
         run: |
           cd target-repo
           git config user.name "Grain-Kitty"
           git config user.email "yuwenpei983@gmail.com"
-          git add .
+          git add.
           git commit -m "upload from Web-For-building"
-          git push origin main 
+          git push origin main
