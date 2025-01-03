@@ -43,6 +43,9 @@ function load() {
   pio_container.style.zIndex = "1";
   pio_canvas.style.height = "20rem";
   pio_alignment = "right"; //初始位置
+  if (pio_alignment === "right") {
+    pio_container.querySelector('.pio-show').style.transform = 'scaleX(-1)',pio_container.querySelector('.pio-show').style.left = '-4em';
+  }
 
   // Then apply style
   pio_refresh_style();

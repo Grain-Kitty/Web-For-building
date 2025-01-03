@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //屏蔽输入框的自动填充功能
 
 // 加载 updatelog.json 文件
-fetch('https://cdn.jsdelivr.net/gh/Grain-Kitty/Web-For-building@refs/heads/main/updatelog.json')
+fetch('../updatelog.json')
   .then(response => response.json())
   .then(data => {
     // 输出特定信息到控制台
