@@ -7,12 +7,14 @@ import vue from "@vitejs/plugin-vue";
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import viteCompression from "vite-plugin-compression";
+import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vitejs.dev/config/
 export default ({ mode }) =>
   defineConfig({
     plugins: [
       vue(),
+      vueDevTools(),
       AutoImport({
         imports: ["vue"],
         resolvers: [ElementPlusResolver()],

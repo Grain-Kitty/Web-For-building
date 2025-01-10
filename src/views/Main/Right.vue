@@ -38,6 +38,7 @@ const siteUrl = computed(() => {
   // flex: 1 0 0%;
   width: 50%;
   margin-left: 0.75rem;
+  color: var(--theme-skin);
 
   .logo {
     width: 100%;
@@ -81,7 +82,7 @@ const siteUrl = computed(() => {
   position: absolute;
   width: 580px;
   height: 478px;
-  top: 20px;
+  top: 100px;
   right: 20px;
 }
 </style>

@@ -4,10 +4,10 @@
       <el-collapse-item title="个性壁纸" name="1">
         <div class="bg-set">
           <el-radio-group v-model="coverType" text-color="#ffffff" @change="radioChange">
-            <el-radio value="0" size="large" border>默认壁纸</el-radio>
-            <el-radio value="1" size="large" border>每日一图</el-radio>
+            <el-radio value="0" size="large" border>默认壁纸 暂时关闭其他选项</el-radio>
+            <!-- <el-radio value="1" size="large" border>每日一图</el-radio>
             <el-radio value="2" size="large" border>随机风景</el-radio>
-            <el-radio value="3" size="large" border>随机动漫</el-radio>
+            <el-radio value="3" size="large" border>随机动漫</el-radio> -->
           </el-radio-group>
         </div>
       </el-collapse-item>
@@ -80,7 +80,7 @@
         </div>
       </el-collapse-item>
       <el-collapse-item title="其他设置" name="4">
-        <div>设置内容待增加</div>
+        <span>设置内容待增加</span>
       </el-collapse-item>
     </el-collapse>
   </div>
@@ -119,6 +119,9 @@ const radioChange = () => {
 </script>
 
 <style lang="scss" scoped>
+.setting span {
+  color: #fff;
+}
 .setting {
   .collapse {
     border-radius: 8px;

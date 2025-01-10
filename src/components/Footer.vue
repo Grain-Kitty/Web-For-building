@@ -82,6 +82,7 @@ const siteUrl = computed(() => {
   // 文字不换行
   word-break: keep-all;
   white-space: nowrap;
+  transition: all 1s ease-in-out !important;
   .power {
     animation: fade 0.3s;
   }

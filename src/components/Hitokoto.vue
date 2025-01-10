@@ -13,7 +13,7 @@
         v-show="openMusicShow && store.musicIsOk"
         @click="store.musicOpenState = true"
       >
-        <music-menu theme="filled" size="18" fill="#efefef" />
+        <music-menu theme="filled" size="18" fill="#262154" />
         <span>打开音乐播放器</span>
       </div>
     </Transition>
@@ -90,7 +90,7 @@ onMounted(() => {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #00000026;
+    // background: #00000026;
     padding: 4px 0;
     border-radius: 8px 8px 0 0;
     .i-icon {

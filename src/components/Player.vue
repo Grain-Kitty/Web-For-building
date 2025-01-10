@@ -222,7 +222,8 @@ defineExpose({ playToggle, changeVolume, changeSong, toggleList });
           font-size: 16px;
           margin-right: 6px;
         }
-        .aplayer-author {
+        .aplayer-author,
+        .aplayer-title  {
           color: #efefef;
         }
       }
@@ -278,6 +279,7 @@ defineExpose({ playToggle, changeVolume, changeSong, toggleList });
           border-radius: 6px !important;
         }
         .aplayer-list-index,
+        .aplayer-list-title,
         .aplayer-list-author {
           color: #efefef;
         }

@@ -1,5 +1,5 @@
 <template>
-  <div class="box cards" @mouseenter="closeShow = true" @mouseleave="closeShow = false">
+  <div class="box cards carder" @mouseenter="closeShow = true" @mouseleave="closeShow = false">
     <transition name="el-fade-in-linear">
       <close-one
         class="close"

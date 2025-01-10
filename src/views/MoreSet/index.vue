@@ -1,14 +1,8 @@
 <template>
   <div class="set" @mouseenter="closeShow = true" @mouseleave="closeShow = false" @click.stop>
     <transition name="el-fade-in-linear">
-      <close-one
-        class="close"
-        theme="filled"
-        size="28"
-        fill="#ffffff60"
-        v-show="closeShow"
-        @click="store.setOpenState = false"
-      />
+      <close-one class="close" theme="filled" size="28" fill="#ffffff60" v-show="closeShow"
+        @click="store.setOpenState = false" />
     </transition>
     <el-row :gutter="40">
       <el-col :span="12" class="left">
@@ -80,6 +74,9 @@ const jumpTo = (url) => {
 </script>
 
 <style lang="scss" scoped>
+.set span,.set div{
+  color: white;
+}
 .set {
   position: absolute;
   top: 50%;
@@ -88,7 +85,9 @@ const jumpTo = (url) => {
   transform: translate(-50%, -50%);
   width: 80%;
   height: 80%;
-  background: rgb(255 255 255 / 40%);
+  background-color: #00000030;
+  backdrop-filter: blur(20px);
+  // background: rgb(255 255 255 / 40%);
   border-radius: 6px;
   padding: 40px;
 
@@ -127,6 +126,7 @@ const jumpTo = (url) => {
         width: 100%;
         height: 260px;
         min-height: 140px;
+
         .bg {
           font-size: 5rem;
         }
@@ -140,14 +140,17 @@ const jumpTo = (url) => {
           .bg {
             font-size: 4.5rem;
           }
+
           .sm {
             font-size: 1.7rem;
           }
         }
+
         @media (max-width: 825px) {
           .bg {
             font-size: 3.8rem;
           }
+
           .sm {
             font-size: 1.3rem;
           }

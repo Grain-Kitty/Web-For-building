@@ -2,9 +2,10 @@
   "name": "Grain_Kitty-Web",
   "home": "https://GrainKitty.top",
   "github": "https://github.com/Grain-Kitty/Web-For-building",
-  "version": "2.7",
-  "updatatime" : "2025-1-3",
+  "version": "3.0.0",
+  "updatatime" : "2025-1-10",
   "new": [
+    "25.1.10--添加了新内容，重新写了布局，关闭了壁纸功能",
     "25.1.2--重新部署了网站，解决了vue构建后github-page无法部署的问题",
     "25.1.1--重构天气的获取方式",
     "24.12.31--采用 Vue 进行重构",

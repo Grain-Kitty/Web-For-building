@@ -97,24 +97,22 @@ onBeforeUnmount(() => {
 
 <style lang="scss" scoped>
 .shape1 {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background: var(--accent);
-  --accent: rgb(134, 179, 0);
   clip-path: polygon(0% 0%, 45% 0%, 20% 100%, 0% 100%);
 }
 
 .shape2 {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background: var(--accent);
-  --accent: rgb(134, 179, 0);
   clip-path: polygon(0% 0%, 25% 0%, 35% 100%, 0% 100%);
   opacity: 0.5;
 }
@@ -134,7 +132,7 @@ onBeforeUnmount(() => {
 
   .bg {
     display: block;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100vw;
